@@ -1,3 +1,37 @@
 .table{
-    color:red
+    display: flex;
+    justify-content:center;
+}
+
+table{
+    table-layout:fixed;
+    width: 30%;
+    border: solid medium;
+}
+
+td{
+    border: solid thin;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+}
+
+tr>td:nth-child(3n){
+    border-right:solid medium;
+}
+
+tr>td:nth-child(3n+1){
+    border-left:solid medium;
+}
+
+tr:nth-child(3n)>td{
+    border-bottom: solid medium;
+}
+
+tr:nth-child(3n+1)>td{
+    border-top: solid medium;
+}
+
+button{
+    margin-right: 2px;
 }
